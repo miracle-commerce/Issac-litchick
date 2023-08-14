@@ -1,0 +1,48 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "tagline-and-social-links-0": {
+          "type": "tagline_and_social_links",
+          "settings": {
+            "tagline": "<p>LitChicks is here to help you help your flock stay LIT! Lit, meaning excellent. We believe a key factor  for excellent chickens is highly digestible, naturally occurring macro and micro nutrients ready to be served as a daily supplement for chickens to live their best egg-layin' life!<\/p>",
+            "show_social_icons": true
+          }
+        },
+        "menus-0": {
+          "type": "menus",
+          "settings": {
+            "show_menu_headings": false,
+            "linklist_1": "main-menu",
+            "linklist_2": "footer"
+          }
+        },
+        "newsletter-0": {
+          "type": "newsletter",
+          "settings": {
+            "newsletter_heading": "Sign up to our newsletter"
+          }
+        }
+      },
+      "block_order": [
+        "tagline-and-social-links-0",
+        "menus-0",
+        "newsletter-0"
+      ],
+      "settings": {
+        "logo_max_width": 270,
+        "show_payment_icons": true,
+        "show_country_selector": true,
+        "show_locale_selector": true,
+        "color_scheme": "primary",
+        "use_gradient_background": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

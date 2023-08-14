@@ -1,0 +1,57 @@
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "home_page_only": false,
+        "display": "marquee",
+        "text": "PLANT BASED  ~ DAILY CHICKEN SUPPLEMENT ~ HIGHLY DIGESTIBLE ~  MACRO & MICRO MINERALS",
+        "link": "",
+        "color_scheme": "primary",
+        "use_gradient_background": false,
+        "repeat_text": true,
+        "shape_between_text": "star",
+        "animate_shape_between_text": true,
+        "speed": 90,
+        "direction": ""
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo": "shopify:\/\/shop_images\/Resized_Litchicks__Chicken_Head_Backyard_Chickens_flock_plant_based_micro_macro_nutrients_osteoporosis_minerals_supplement_eggshell_digestible_bioavailable_calcium_magnesium_iron_zinc_copper_manganese_organic.png",
+        "logo_max_width": 40,
+        "main_linklist": "main-menu",
+        "show_all_navigation_links": true,
+        "showcase_second_level_links": false,
+        "showcase_first_level_collections": false,
+        "show_collection_images": false,
+        "crop": "",
+        "header_layout": "navigation_left_logo_center",
+        "header_show_search": true,
+        "sticky_header": true,
+        "show_icons": true,
+        "enable_overlay_on_homepage": false,
+        "enable_overlay_on_collection_pages": true,
+        "enable_overlay_on_product_pages": true,
+        "overlay_text_color": "white",
+        "overlay_logo": "{{ shop.brand.logo }}",
+        "transparent_when_overlaid_and_stuck": true,
+        "overlay_show_separator_border": false,
+        "overlay_first_section_padding_top_desktop": 8,
+        "overlay_first_section_padding_top_mobile": 7,
+        "color_scheme": "primary",
+        "use_gradient_background": false,
+        "dropdown_bg": "accent-1",
+        "sidebar_show_footer_menu": false,
+        "sidebar_show_social_icons": false
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

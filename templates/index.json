@@ -1,0 +1,762 @@
+{
+  "sections": {
+    "1650891615011511eb": {
+      "type": "text-marquee",
+      "disabled": true,
+      "settings": {
+        "text": "NATURALLY OCCURRING ~ SINGLE INGREDIENT  ~ CHICKEN SUPPLEMENT ~ HIGHLY DIGESTIBLE -  MACRO & MICRO MINERALS",
+        "repeat_text": true,
+        "shape_between_text": "10_point_star",
+        "animate_shape_between_text": true,
+        "link": "",
+        "font": "font-heading heading-secondary",
+        "apply_effects": false,
+        "mobile_text_scale": 2,
+        "desktop_text_scale": 4,
+        "speed": 120,
+        "direction": "",
+        "color_scheme": "quaternary",
+        "use_gradient_background": false
+      }
+    },
+    "1650891033bae15b05": {
+      "type": "image-with-text",
+      "blocks": {
+        "175e66d3-20ec-47c8-b628-6580300f4f5f": {
+          "type": "sticker",
+          "settings": {
+            "text": "Sticker",
+            "shape": "star_1",
+            "width": 220,
+            "sticker_font_size": "1.563rem",
+            "image": "shopify:\/\/shop_images\/Resized_Litchicks__LithothamniumDual_Backyard_Chickens_flock_plant_based_micro_macro_nutrients_osteoporosis_minerals_supplement_eggshell_digestible_bioavailable_calcium_magnesium_iron_zinc_copper_manganese_organic.png",
+            "half_image_width_on_mobile": true,
+            "horizontal_position": 85,
+            "vertical_position": 95,
+            "rotate": 56,
+            "show_sticker_on_mobile": true,
+            "show_sticker_on_desktop": true,
+            "rotation_animation": "rotate_when_scrolling",
+            "enable_parallax": true,
+            "parallax_speed": 6,
+            "color": "bg-scheme-accent-1 text-scheme-accent-1-overlay",
+            "color_scheme": "same_as_section"
+          }
+        },
+        "fd63bf46-7b83-450b-9205-e98d3bb15657": {
+          "type": "background_shape",
+          "settings": {
+            "shape": "star_1",
+            "blob_type": 1,
+            "size": 25,
+            "opacity": 0,
+            "blur": 0,
+            "horizontal_position": 80,
+            "vertical_position": 58,
+            "rotate": -12,
+            "enable_parallax": true,
+            "parallax_speed": 3,
+            "color": "gradient",
+            "color_scheme": "same_as_section"
+          }
+        },
+        "7de8f682-42c1-4705-b9ea-207f66e0c04e": {
+          "type": "shape_divider",
+          "settings": {
+            "target_section": "below",
+            "target_section_color_scheme": "tertiary",
+            "style": "waves-1-asymmetrical_1440x261",
+            "flip_horizontal": true,
+            "enable_animation": true,
+            "animation_direction": "reverse"
+          }
+        },
+        "140e7989-8375-45bf-b75f-61897a50b73a": {
+          "type": "sticker",
+          "disabled": true,
+          "settings": {
+            "text": "Sticker",
+            "shape": "star_1",
+            "width": 120,
+            "sticker_font_size": "1.563rem",
+            "half_image_width_on_mobile": true,
+            "horizontal_position": 10,
+            "vertical_position": 95,
+            "rotate": 0,
+            "show_sticker_on_mobile": true,
+            "show_sticker_on_desktop": true,
+            "rotation_animation": "rotate_when_scrolling",
+            "enable_parallax": true,
+            "parallax_speed": 6,
+            "color": "bg-scheme-accent-1 text-scheme-accent-1-overlay",
+            "color_scheme": "same_as_section"
+          }
+        },
+        "92116a62-81d2-4d17-8e76-4a8b86368013": {
+          "type": "sticker",
+          "disabled": true,
+          "settings": {
+            "text": "Sticker",
+            "shape": "star_1",
+            "width": 150,
+            "sticker_font_size": "1.563rem",
+            "half_image_width_on_mobile": true,
+            "horizontal_position": 56,
+            "vertical_position": 95,
+            "rotate": -12,
+            "show_sticker_on_mobile": true,
+            "show_sticker_on_desktop": true,
+            "rotation_animation": "rotate_when_scrolling",
+            "enable_parallax": false,
+            "parallax_speed": 5,
+            "color": "bg-scheme-accent-1 text-scheme-accent-1-overlay",
+            "color_scheme": "same_as_section"
+          }
+        },
+        "7aab269c-5939-444f-a773-3e1e5e815173": {
+          "type": "sticker",
+          "settings": {
+            "text": "Sticker",
+            "shape": "star_1",
+            "width": 150,
+            "sticker_font_size": "1.563rem",
+            "image": "shopify:\/\/shop_images\/resized_Litchicks__Lithothamnium_Backyard_Chickens_flock_plant_based_micro_macro_nutrients_osteoporosis_minerals_supplement_eggshell_digestible_bioavailable_calcium_magnesium_iron_zinc_copper_manganese_organic.png",
+            "half_image_width_on_mobile": true,
+            "horizontal_position": 31,
+            "vertical_position": 95,
+            "rotate": -12,
+            "show_sticker_on_mobile": true,
+            "show_sticker_on_desktop": true,
+            "rotation_animation": "rotate_when_scrolling",
+            "enable_parallax": false,
+            "parallax_speed": 5,
+            "color": "bg-scheme-accent-1 text-scheme-accent-1-overlay",
+            "color_scheme": "same_as_section"
+          }
+        }
+      },
+      "block_order": [
+        "175e66d3-20ec-47c8-b628-6580300f4f5f",
+        "fd63bf46-7b83-450b-9205-e98d3bb15657",
+        "7de8f682-42c1-4705-b9ea-207f66e0c04e",
+        "140e7989-8375-45bf-b75f-61897a50b73a",
+        "92116a62-81d2-4d17-8e76-4a8b86368013",
+        "7aab269c-5939-444f-a773-3e1e5e815173"
+      ],
+      "settings": {
+        "display_on_card": false,
+        "image": "shopify:\/\/shop_images\/resized_square_litchicks_front_logo_flock_plant_based_micro_macro_nutrients_osteoporosis_minerals_supplement_eggshell_digestible_bioavailable_calcium_magnesium_iron_zinc_copper_manganese_organic.png",
+        "crop": "aspect-w-1 aspect-h-1",
+        "image_shape": "default_ellipse",
+        "blob_type": 1,
+        "rotate_image": 0,
+        "image_position": "right",
+        "image_size": "half",
+        "disable_media_style": true,
+        "title": "Foundational Daily Nutrition for Your Flock",
+        "heading_size": "heading-standard",
+        "richtext": "<h4><strong>A plant based supplement full of macro & micro minerals. For less than 10 cents a day you can help keep chicken <\/strong>osteoporosis<strong> away!<\/strong><\/h4>",
+        "text_alignment": "text-center",
+        "button_link": "shopify:\/\/products\/1lb-bag-of-litchicks-lithonutri",
+        "button_label": "Buy Now",
+        "color_scheme": "primary",
+        "use_gradient_background": false
+      }
+    },
+    "1650891638851a4ea4": {
+      "type": "featured-product",
+      "blocks": {
+        "1650891638bb403865-0": {
+          "type": "title",
+          "settings": {
+            "display_on_card": false,
+            "text_align": "text-left"
+          }
+        },
+        "1650891638bb403865-1": {
+          "type": "price",
+          "disabled": true,
+          "settings": {
+            "display_on_card": false,
+            "show_on_sale_sticker": false,
+            "text_align": "text-left"
+          }
+        },
+        "1650891638bb403865-2": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "display_on_card": false,
+            "option_style": "drop_down",
+            "hide_option_labels": true,
+            "enable_color_swatches": false
+          }
+        },
+        "1650891638bb403865-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "display_on_card": false,
+            "show_price": true,
+            "enable_payment_button": true,
+            "show_pickup_availability": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "860fa660-5733-403e-a417-b5be6f5cc786": {
+          "type": "shape_divider",
+          "settings": {
+            "target_section": "below",
+            "target_section_color_scheme": "tertiary",
+            "style": "waves-1-asymmetrical_1440x261",
+            "flip_horizontal": false,
+            "enable_animation": true,
+            "animation_direction": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650891638bb403865-0",
+        "1650891638bb403865-1",
+        "1650891638bb403865-2",
+        "1650891638bb403865-3",
+        "860fa660-5733-403e-a417-b5be6f5cc786"
+      ],
+      "settings": {
+        "title": "LitChicks' Daily Chicken Supplement",
+        "product": "1lb-bag-of-litchicks-lithonutri",
+        "crop": "",
+        "image_shape": "default",
+        "media_mobile_width": "w-full",
+        "desktop_media_width": "lg:col-span-6_lg:col-span-6",
+        "enable_video_looping": true,
+        "thumbnails_position": "left",
+        "thumbnail_crop": "aspect-w-1 aspect-h-1",
+        "thumbnail_shape": "leaf",
+        "hide_media_shadow": false,
+        "thumbnail_size": "standard",
+        "show_thumbnails_on_mobile": false,
+        "color_scheme": "primary",
+        "use_gradient_background": false
+      }
+    },
+    "16508912994a26e8bf": {
+      "type": "rich-text",
+      "blocks": {
+        "0a67b1dc-9897-4fc0-ab9e-cfd162628bae": {
+          "type": "sticker",
+          "disabled": true,
+          "settings": {
+            "text": "Sticker",
+            "shape": "star_1",
+            "width": 200,
+            "sticker_font_size": "1.563rem",
+            "half_image_width_on_mobile": true,
+            "horizontal_position": 10,
+            "vertical_position": 80,
+            "rotate": 0,
+            "show_sticker_on_mobile": true,
+            "show_sticker_on_desktop": true,
+            "rotation_animation": "rotate_when_scrolling",
+            "enable_parallax": true,
+            "parallax_speed": 3,
+            "color": "bg-scheme-accent-1 text-scheme-accent-1-overlay",
+            "color_scheme": "same_as_section"
+          }
+        }
+      },
+      "block_order": [
+        "0a67b1dc-9897-4fc0-ab9e-cfd162628bae"
+      ],
+      "settings": {
+        "title": "Benefits of Daily Use:",
+        "heading_size": "heading-standard",
+        "rich_text": "<h3><strong>Increased Eggshell <\/strong>Strength.<br\/>Help Prevent Chicken Osteoporosis.<br\/>Increased longevity of your flock!<\/h3>",
+        "display_on_card": false,
+        "content_width_desktop": "lg:w-2\/3",
+        "button_link": "shopify:\/\/products\/1lb-bag-of-litchicks-lithonutri",
+        "button_label": "Subscribe & Save",
+        "color_scheme": "tertiary",
+        "use_gradient_background": false
+      }
+    },
+    "16508915343a7fad54": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "1650891534cc32a736-0": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/Resized_Litchicks__Honey_Comb_Backyard_Chickens_flock_plant_based_micro_macro_nutrients_osteoporosis_minerals_supplement_eggshell_digestible_bioavailable_calcium_magnesium_iron_zinc_copper_manganese_organic.png",
+            "title": "Natural Porous Structure",
+            "text": "<p>The natural porous honeycomb cellular structure means more surface area for digestion, making its nutrients highly bioavailable for your flock.<\/p>",
+            "cta_link": "shopify:\/\/blogs\/blog",
+            "cta_text": "Learn more!",
+            "color_scheme": "primary"
+          }
+        },
+        "1650891534cc32a736-1": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/Resized_Litchicks__Heart_with_Beat_Backyard_Chickens_flock_plant_based_micro_macro_nutrients_osteoporosis_minerals_supplement_eggshell_digestible_bioavailable_calcium_magnesium_iron_zinc_copper_manganese_organic.png",
+            "title": "Promotes Overall Excellence",
+            "text": "<p>The high bio availability increases digestibility. Which means your chickens are getting the most out of these nutrients. Helping chickens grow strong and elderly chickens live longer.  Studies show that in old age egg laying chickens start to absorb less critical nutrition for egg production and they start to rob this nutrition from their own bones. <\/p>",
+            "cta_link": "shopify:\/\/blogs\/blog",
+            "cta_text": "Learn more about the impacts",
+            "color_scheme": "primary"
+          }
+        },
+        "1650891534cc32a736-2": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/resized_periodic_elements_backyard_chickens_flock_plant_based_micro_macro_nutrients_osteoporosis_minerals_supplement_eggshell_digestible_bioavailable_calcium_magnesium_iron_zinc_copper_manganese_organic.png",
+            "title": "Guaranteed Analysis",
+            "text": "<p>92% to 98% Mineral Matter<br\/><br\/>Macro Minerals - Calcium, Magnesium<\/p><p>Micro Minerals - Iron, Zinc, Copper, Magnesium<\/p><p>Full spectrum of natural profile of over 25 additional minerals. <\/p>",
+            "cta_link": "shopify:\/\/pages\/quality-control",
+            "cta_text": "Guaranteed Analysis",
+            "color_scheme": "primary"
+          }
+        },
+        "e8d579f1-db40-4348-8065-4cb8a25ba51f": {
+          "type": "sticker",
+          "disabled": true,
+          "settings": {
+            "text": "Sticker",
+            "shape": "star_1",
+            "width": 150,
+            "sticker_font_size": "1.563rem",
+            "half_image_width_on_mobile": true,
+            "horizontal_position": 80,
+            "vertical_position": 80,
+            "rotate": 0,
+            "show_sticker_on_mobile": true,
+            "show_sticker_on_desktop": true,
+            "rotation_animation": "none",
+            "enable_parallax": false,
+            "parallax_speed": 3,
+            "color": "bg-scheme-accent-1 text-scheme-accent-1-overlay",
+            "color_scheme": "same_as_section"
+          }
+        }
+      },
+      "block_order": [
+        "1650891534cc32a736-0",
+        "1650891534cc32a736-1",
+        "1650891534cc32a736-2",
+        "e8d579f1-db40-4348-8065-4cb8a25ba51f"
+      ],
+      "settings": {
+        "display_on_card": false,
+        "slideshow_on_mobile": false,
+        "title": "",
+        "crop": "",
+        "image_shape": "default",
+        "show_index_on_blocks": false,
+        "index_shape": "star_1",
+        "color_scheme": "tertiary",
+        "use_gradient_background": false
+      }
+    },
+    "165089168609b8f684": {
+      "type": "blog-posts",
+      "blocks": {
+        "821c67ed-463f-43b1-8388-52f9db81567a": {
+          "type": "shape_divider",
+          "settings": {
+            "target_section": "below",
+            "target_section_color_scheme": "tertiary",
+            "style": "large-waves_1200x84",
+            "flip_horizontal": false,
+            "enable_animation": true,
+            "animation_direction": ""
+          }
+        }
+      },
+      "block_order": [
+        "821c67ed-463f-43b1-8388-52f9db81567a"
+      ],
+      "settings": {
+        "display_on_card": false,
+        "title": "Blog posts",
+        "blog": "blog",
+        "post_limit": 3,
+        "crop": "aspect-w-4 aspect-h-3",
+        "image_shape": "hexagon",
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "show_post_excerpt": true,
+        "show_view_all": true,
+        "color_scheme": "quaternary",
+        "use_gradient_background": false
+      }
+    },
+    "1650891303c44cb2d2": {
+      "type": "icon-list",
+      "blocks": {
+        "16508913039d58ab55-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "organic",
+            "text": ""
+          }
+        },
+        "16508913039d58ab55-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "no_additives",
+            "text": ""
+          }
+        },
+        "16508913039d58ab55-2": {
+          "type": "icon",
+          "settings": {
+            "icon": "no_artificial_colors",
+            "text": ""
+          }
+        },
+        "2d49c667-6651-4aec-9f2e-b5b01b310ecd": {
+          "type": "icon",
+          "settings": {
+            "icon": "organic",
+            "text": ""
+          }
+        },
+        "2eb4a361-85df-445d-a708-84d7e4173322": {
+          "type": "icon",
+          "settings": {
+            "icon": "gluten_free",
+            "text": ""
+          }
+        },
+        "eb42bfa2-e2b9-4bfe-8b67-b4e7b94efbf6": {
+          "type": "icon",
+          "settings": {
+            "icon": "sugar_free",
+            "text": ""
+          }
+        },
+        "7f2265e7-4734-46f9-a3c4-cec407d5a2d3": {
+          "type": "icon",
+          "settings": {
+            "icon": "probiotic",
+            "text": ""
+          }
+        },
+        "f3086909-a9d2-48be-ab4f-01abd112ac9c": {
+          "type": "icon",
+          "settings": {
+            "icon": "low_carb",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "16508913039d58ab55-0",
+        "16508913039d58ab55-1",
+        "16508913039d58ab55-2",
+        "2d49c667-6651-4aec-9f2e-b5b01b310ecd",
+        "2eb4a361-85df-445d-a708-84d7e4173322",
+        "eb42bfa2-e2b9-4bfe-8b67-b4e7b94efbf6",
+        "7f2265e7-4734-46f9-a3c4-cec407d5a2d3",
+        "f3086909-a9d2-48be-ab4f-01abd112ac9c"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "max_width": 100,
+        "text_style": "body",
+        "color_scheme": "secondary",
+        "use_gradient_background": false
+      }
+    },
+    "165089147572b58f85": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "e407a37c-5b97-486d-99d1-d1ff54c6cb41": {
+          "type": "shape_divider",
+          "disabled": true,
+          "settings": {
+            "target_section": "below",
+            "target_section_color_scheme": "quaternary",
+            "style": "medium-waves_1200x43",
+            "flip_horizontal": false,
+            "enable_animation": false,
+            "animation_direction": ""
+          }
+        },
+        "d3fd69d6-0368-49b2-a1c4-1f8f4b2c46ba": {
+          "type": "shape_divider",
+          "disabled": true,
+          "settings": {
+            "target_section": "below",
+            "target_section_color_scheme": "quaternary",
+            "style": "small-waves_1200x20",
+            "flip_horizontal": false,
+            "enable_animation": false,
+            "animation_direction": ""
+          }
+        }
+      },
+      "block_order": [
+        "e407a37c-5b97-486d-99d1-d1ff54c6cb41",
+        "d3fd69d6-0368-49b2-a1c4-1f8f4b2c46ba"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2023-07-19_at_12.28.07_PM.png",
+        "display_on_card": false,
+        "display_content_below_image_on_mobile": true,
+        "style": "inset",
+        "height": "pt-600",
+        "place_content": "place-content-start-center",
+        "text_align": "text-center",
+        "title": "Benefits of daily use",
+        "heading_size": "heading-standard",
+        "richtext": "",
+        "cta_url": "",
+        "cta_text": "Shop Now",
+        "color_scheme": "primary",
+        "use_gradient_background": false,
+        "text_overlay_color": "same_as_section"
+      }
+    },
+    "1650891358fef95dd4": {
+      "type": "featured-collection",
+      "blocks": {
+        "7261f40b-41bf-4b48-8953-041e29fe35e4": {
+          "type": "shape_divider",
+          "settings": {
+            "target_section": "above",
+            "target_section_color_scheme": "secondary",
+            "style": "medium-waves_1200x43",
+            "flip_horizontal": false,
+            "enable_animation": false,
+            "animation_direction": ""
+          }
+        }
+      },
+      "block_order": [
+        "7261f40b-41bf-4b48-8953-041e29fe35e4"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "subheading": "Use this text to share information about your collection.",
+        "collection": "",
+        "no_products": 2,
+        "show_view_all": false,
+        "enable_quick_buy": true,
+        "display_on_card": false,
+        "layout": "carousel",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 4,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "1",
+        "product_tiles_aspect_ratio": "",
+        "image_shape": "",
+        "color_scheme": "tertiary",
+        "use_gradient_background": false
+      }
+    },
+    "1650891590472e0352": {
+      "type": "comparison-table",
+      "blocks": {
+        "1650891590fbd399df-0": {
+          "type": "row",
+          "settings": {
+            "title": "Label",
+            "column_1_icon": "check-mark",
+            "column_1_text": "",
+            "column_2_icon": "check_close",
+            "column_2_text": "",
+            "column_3_icon": "check_close",
+            "column_3_text": "",
+            "column_4_icon": "check_close",
+            "column_4_text": ""
+          }
+        },
+        "1650891590fbd399df-1": {
+          "type": "row",
+          "settings": {
+            "title": "Label",
+            "column_1_icon": "check-mark",
+            "column_1_text": "",
+            "column_2_icon": "check_close",
+            "column_2_text": "",
+            "column_3_icon": "check_close",
+            "column_3_text": "",
+            "column_4_icon": "check_close",
+            "column_4_text": ""
+          }
+        },
+        "1650891590fbd399df-2": {
+          "type": "row",
+          "settings": {
+            "title": "Label",
+            "column_1_icon": "check-mark",
+            "column_1_text": "",
+            "column_2_icon": "check_close",
+            "column_2_text": "",
+            "column_3_icon": "check_close",
+            "column_3_text": "",
+            "column_4_icon": "check_close",
+            "column_4_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650891590fbd399df-0",
+        "1650891590fbd399df-1",
+        "1650891590fbd399df-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_on_card": true,
+        "title": "",
+        "highlighted_column": "1",
+        "column_1_title": "Column 1",
+        "column_2_title": "Column 2",
+        "enable_column_3": true,
+        "column_3_title": "Column 3",
+        "enable_column_4": true,
+        "column_4_title": "Column 4",
+        "color_scheme": "primary",
+        "use_gradient_background": false
+      }
+    },
+    "16508916022eba9802": {
+      "type": "video-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "crop": "widescreen",
+        "crop_desktop": "same",
+        "display_on_card": false,
+        "style": "full",
+        "place_content": "place-content-center-center",
+        "text_align": "text-center",
+        "title": "Video with text overlay",
+        "heading_size": "heading-standard",
+        "richtext": "",
+        "cta_url": "",
+        "cta_text": "Shop Now",
+        "color_scheme": "primary",
+        "use_gradient_background": false,
+        "text_overlay_color": "same_as_section"
+      }
+    },
+    "16508916323f758a49": {
+      "type": "testimonials",
+      "blocks": {
+        "16508916326463ca2f-0": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "<p>A quote from a customer or staff member can help show of your products' unique selling points.<\/p>",
+            "source": "Source"
+          }
+        },
+        "16508916326463ca2f-1": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "<p>A quote from a customer or staff member can help show of your products' unique selling points.<\/p>",
+            "source": "Source"
+          }
+        },
+        "16508916326463ca2f-2": {
+          "type": "testimonial",
+          "settings": {
+            "rating": "5_stars",
+            "quote": "<p>A quote from a customer or staff member can help show of your products' unique selling points.<\/p>",
+            "source": "Source"
+          }
+        },
+        "eebb3a63-a165-4a2b-be61-c3aa09e2d2d9": {
+          "type": "shape_divider",
+          "settings": {
+            "target_section": "below",
+            "target_section_color_scheme": "tertiary",
+            "style": "tilt-1-asymmetrical_1440x101",
+            "flip_horizontal": false,
+            "enable_animation": false,
+            "animation_direction": ""
+          }
+        }
+      },
+      "block_order": [
+        "16508916326463ca2f-0",
+        "16508916326463ca2f-1",
+        "16508916326463ca2f-2",
+        "eebb3a63-a165-4a2b-be61-c3aa09e2d2d9"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_on_card": true,
+        "title": "",
+        "max_width": 100,
+        "disable_media_style": false,
+        "crop": "",
+        "image_shape": "default",
+        "desktop_slide_width": 20,
+        "autoscroll_mode": "1",
+        "color_scheme": "primary",
+        "use_gradient_background": false
+      }
+    },
+    "1650891682f199a493": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "subheading": "Use this text to share information about your collection.",
+        "collection": "",
+        "no_products": 3,
+        "show_view_all": false,
+        "enable_quick_buy": false,
+        "display_on_card": false,
+        "layout": "grid",
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "slideshow_focus": "center",
+        "mobile_slide_width": "three_fifths",
+        "desktop_slide_width": 40,
+        "autoscroll_mode": "1",
+        "product_tiles_aspect_ratio": "",
+        "image_shape": "wave_tear",
+        "color_scheme": "primary",
+        "use_gradient_background": false
+      }
+    },
+    "1650891804363a2769": {
+      "type": "newsletter",
+      "disabled": true,
+      "settings": {
+        "title": "Sign up to our newsletter",
+        "richtext": "<p>Receive special offers and first look at new products.<\/p>",
+        "display_on_card": false,
+        "color_scheme": "secondary",
+        "use_gradient_background": false
+      }
+    }
+  },
+  "order": [
+    "1650891615011511eb",
+    "1650891033bae15b05",
+    "1650891638851a4ea4",
+    "16508912994a26e8bf",
+    "16508915343a7fad54",
+    "165089168609b8f684",
+    "1650891303c44cb2d2",
+    "165089147572b58f85",
+    "1650891358fef95dd4",
+    "1650891590472e0352",
+    "16508916022eba9802",
+    "16508916323f758a49",
+    "1650891682f199a493",
+    "1650891804363a2769"
+  ]
+}
