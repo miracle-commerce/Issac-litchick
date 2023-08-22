@@ -7,3 +7,130 @@ Make sure to uncomment out the line in theme.liquid so that this css file is loa
 For more information check out this help guide:
 https://docs.switchthemes.co/shapes/advanced/custom-css.html
 */
+.product-pricing-group-options{
+    display: block; 
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px; 
+    margin-bottom: 10px;
+}
+.pricing-option-slider__wrapper{
+    width: 100%;
+}
+
+.pricing-option-slider__wrapper input[type="range"]{
+    width: 100%;
+}
+
+.pricing-option-slider__wrapper .quantity-labels{
+    width: 100%; 
+    position: relative;
+}
+
+.pricing-option-slider__wrapper .quantity-labels .number_chickens_label{
+    position: absolute; 
+    left: var(--label-left-pos);
+}
+
+.number_chickens_label.last{
+    transform: translateX(-100%);
+}
+
+.chicken-number-selector-label{
+    font-size: 16px; 
+    font-weight: 600; 
+    margin-bottom: 20px; 
+    display: inline-block;
+}
+
+.chicken-number-selector{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 7px; 
+    box-shadow: 0 0 1px 1px #000;
+}
+
+.chicken-number-selector::-webkit-slider-runnable-track {
+    background: #4c3e86;
+    height: 7px;
+  }
+
+.chicken-number-selector::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    margin-top: -8px;
+    margin-left: -5px;
+    height: 20px;
+    width: 20px;    
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    box-shadow: 0 0 1px 1px #000;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    content: '1'
+}
+
+.chicken-number-selector::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    margin-top: -8px;
+    margin-left: -5px;
+    height: 20px;
+    width: 20px;    
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    box-shadow: 0 0 1px 1px #000;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    content: '1'
+}
+
+@media only screen and (min-width: 768px){
+    .chicken-number-selector::-webkit-slider-thumb{
+        background: none; 
+        background-image: url("https://cdn.shopify.com/s/files/1/0758/4884/3555/files/icon_1_chicken.png?v=1692692731");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: -20px; 
+        margin-left: -10px;
+        width: 30px; 
+        height: 30px;
+        box-shadow: none; 
+    }
+    .chicken-number-selector::-moz-range-thumb{
+        background: none; 
+        background-image: url("https://cdn.shopify.com/s/files/1/0758/4884/3555/files/icon_1_chicken.png?v=1692692731");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: -20px; 
+        margin-left: -10px;
+        width: 30px; 
+        height: 30px;
+        box-shadow: none; 
+    }
+}
+
+.item-selling-plan-selector__wrapper{
+    padding-top: 15px;
+}
+
+.item-selling-plan-selector{
+    width: calc(100% - 30px);
+    font-size: 14px; 
+    padding: 10px;
+    max-width: 200px;
+}
+
+#right-drawer-slot{
+    width: 600px !important;
+    max-width: calc(100% - 30px);
+}
+
+#right-drawer-slot .item-selling-plan-selector{
+    width: 100%; 
+    font-size: 12px;
+}

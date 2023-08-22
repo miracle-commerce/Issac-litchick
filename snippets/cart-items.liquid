@@ -46,8 +46,9 @@
                     value="{{ item.quantity }}"
                     size="4"
                     data-last-value="{{ item.quantity }}"
-                    @change="itemQuantityChange()"
+                    @change="itemChange('quantity')"
                     @keyup.debounce.750ms="$dispatch('change')"
+                    data-line-item-quantity
                   >
                   <button
                     class="w-8 h-full"
@@ -163,6 +164,17 @@
                     </div>
                   {%- endif -%}
                 </div>
+
+                {% if item.selling_plan_allocation == null and item.variant.selling_plan_allocations.size > 0 %}
+                  <div class="item-selling-plan-selector__wrapper" data-item-selling-plan>
+                    <select name="" id="" class="item-selling-plan-selector" @change="itemChange('selling_plan')">
+                      <option value="">Subscription & Save</option>
+                      {% for selling_plan_allocation in item.variant.selling_plan_allocations %}
+                        <option value="{{selling_plan_allocation.selling_plan.id}}">{{selling_plan_allocation.selling_plan.name}}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                {% endif %}
 
                 {%- unless template == 'cart' -%}
                   {{ quantity }}

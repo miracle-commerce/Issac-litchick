@@ -5,6 +5,7 @@ window['ThemeSection_Product'] = ({
   template,
   thumbnailsPosition,
   showThumbnailsOnMobile,
+  selectedChickenNumber
 }) => {
   return {
     productRoot: null,
@@ -22,6 +23,9 @@ window['ThemeSection_Product'] = ({
     template: template,
     thumbnailsPosition: thumbnailsPosition,
     showThumbnailsOnMobile: showThumbnailsOnMobile,
+    selectedChickenNumber,
+    prQuantity: 1,
+    matchedPricingGroup: '',
     get addToCartText() {
       if (this.current_variant) {
         if (this.loading) {
@@ -76,7 +80,8 @@ window['ThemeSection_Product'] = ({
       return '';
     },
     get current_price() {
-      return this.current_variant.price;
+      console.log(this.quantity);
+      return this.current_variant.price * parseInt(this.quantity);
     },
     get isUsingSlideshowToDisplayMedia() {
       const splideEl = this.productRoot.querySelector('.splide--product');
@@ -101,8 +106,9 @@ window['ThemeSection_Product'] = ({
     init() {
       // Set a product root for nested components
       // to use instead of $root (which refers to their root)
+      this.getMatchedPricingGroup();
+      this.setFrequencyValue();
       this.productRoot = this.$root;
-
       if (this.$refs.productForm) {
         this.$refs.productForm.addEventListener(
           'submit',
@@ -136,7 +142,15 @@ window['ThemeSection_Product'] = ({
       });
 
       this.updateStoreAvailability(this.current_variant);
+
+      this.$watch('selectedChickenNumber', (value)=>{
+        if(value < 5 && this.prQuantity == 1){
+          this.$root.querySelector("[name ='rc_selling_plan']").value = '4911202595';
+          this.$root.querySelector("[name ='rc_selling_plan']").dispatchEvent(new CustomEvent('change'))
+        }
+      })
     },
+    
     getAddToCartButtonHeight() {
       window.onload = function () {
         const height = document.querySelector('.add-to-cart-btn').offsetHeight;
@@ -158,7 +172,6 @@ window['ThemeSection_Product'] = ({
     },
     optionChange() {
       this.getOptions();
-
       const matchedVariant = ShopifyProduct.getVariantFromOptionArray(
         this.product,
         this.options
@@ -205,6 +218,10 @@ window['ThemeSection_Product'] = ({
           this.optionHandles.push(
             selector.options[selector.selectedIndex].dataset.handle
           );
+        } else if(selector.getAttribute('type') === 'hidden'){
+          const value = selector.value;
+          this.options.push(value);
+          this.optionHandles.push(selector.dataset.handle);
         } else {
           if (selector.checked) {
             console;
@@ -317,6 +334,80 @@ window['ThemeSection_Product'] = ({
         })
       );
     },
+
+    
+    get pricingGroupData(){
+      if(this.$root.querySelector("#product-pricing-group-data")){
+        return JSON.parse(this.$root.querySelector("#product-pricing-group-data").innerHTML);
+      } else{
+        return false;
+      }
+    },
+
+    get pricingGroupOptions(){
+      if(this.$root.querySelector("#pricingGroupOptions") && this.$root.querySelector("#pricingGroupOptions").innerHTML !== ''){
+        return JSON.parse(this.$root.querySelector("#pricingGroupOptions").innerHTML).values;
+      }else{
+        return false;
+      }
+    },
+
+    getMatchedPricingGroup(){
+      if(this.pricingGroupData){
+        for( let i = 0; i < this.pricingGroupData.length; i++){
+          if(this.pricingGroupData[i].max_quantity >= this.selectedChickenNumber && this.pricingGroupData[i].min_quantity <= this.selectedChickenNumber){
+            return this.matchedPricingGroup = this.pricingGroupData[i];
+          }
+        }
+      }
+    },
+
+    setFrequencyValue(){
+      if(this.matchedPricingGroup && this.product.selling_plan_groups.length > 0){
+        var matchedSellingPlanId;
+        if(this.matchedPricingGroup.default_frequency_title){
+          for(let i = 0; i < this.product.selling_plan_groups.length; i++){
+            this.product.selling_plan_groups[i].selling_plans.forEach((selling_plan)=>{
+              if(selling_plan.name == this.matchedPricingGroup.default_frequency_title){
+                matchedSellingPlanId = selling_plan.id;
+              }
+            })
+          }
+        }
+        if(matchedSellingPlanId){
+          if(this.$root.querySelector("[name='rc_selling_plan']")){
+            this.$root.querySelector("[name='rc_selling_plan']").value = matchedSellingPlanId;
+            this.$root.querySelector("[name='rc_selling_plan']").dispatchEvent(new CustomEvent('change'));
+          } else{
+            setTimeout(()=>{
+              this.$root.querySelector("[name='rc_selling_plan']").value = matchedSellingPlanId;
+              this.$root.querySelector("[name='rc_selling_plan']").dispatchEvent(new CustomEvent('change'));
+            }, 2000)
+          }
+        }
+      }
+    },
+
+    pricingGroupChange(){
+      if(this.pricingGroupData){
+        this.getMatchedPricingGroup();
+        this.setFrequencyValue();
+        this.prQuantity = this.matchedPricingGroup['number_of_1_lb_bags'];
+      }
+
+      this.matchedPricingGroupProductOption();
+      
+    },
+
+    matchedPricingGroupProductOption(){
+      if(this.pricingGroupData){
+        let matchedPricingOptionValue = `${this.matchedPricingGroup.min_quantity}-${this.matchedPricingGroup.max_quantity}`;
+        if(this.$refs.pricingGroupOption){
+          this.$refs.pricingGroupOption.value = matchedPricingOptionValue;
+          this.$refs.pricingGroupOption.dispatchEvent(new CustomEvent('change'));
+        }
+      }
+    }
   };
 };
 

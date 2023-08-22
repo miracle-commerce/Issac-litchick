@@ -59,36 +59,51 @@ document.addEventListener('alpine:init', () => {
           }
         });
       },
-      itemQuantityChange(key, value) {
+      itemChange(target, key, value) {
         if (this.locked) return;
-
         const lineItemEl = this.$el.closest('li[data-cart-item-key]');
-        const id = key ? key : lineItemEl.getAttribute('data-cart-item-key'),
-          quantity = parseInt(!isNaN(value) ? value : this.$el.value, 10),
-          sections = 'cart-items,cart-footer,cart-item-count,cart-live-region';
+        const id = key ? key : lineItemEl.getAttribute('data-cart-item-key');
+        if(target === 'quantity'){
+          var quantity = parseInt(!isNaN(value) ? value : this.$el.value, 10);
+        } else if (target === 'selling_plan'){
+          var selling_plan_id = this.$el.value;
+          var quantity = lineItemEl.querySelector("[data-line-item-quantity]").value;
+        }
+
+        var sections = 'cart-items,cart-footer,cart-item-count,cart-live-region';
 
         const config = fetchConfigDefaults();
+        let changeData = {
+            id,
+            quantity,
+            sections,
+            sections_url: window.location.pathname,
+          };
 
-        config.body = JSON.stringify({
-          id,
-          quantity,
-          sections,
-          sections_url: window.location.pathname,
-        });
+        if(selling_plan_id){
+          changeData.selling_plan = selling_plan_id;
+        };
 
-        const lastValue = parseInt(this.$el.dataset.lastValue, 10);
+        config.body = JSON.stringify(changeData);
+
+        let readyChange = true;
+        if(target === 'quantity'){
+          var lastValue = parseInt(this.$el.dataset.lastValue, 10);
+          if(quantity !== lastValue){
+            var currentCount = Alpine.raw(Alpine.store('cart_count').count);
+          }else{
+            readyChange == false;
+          }
+        }
 
         if (quantity !== lastValue) {
           lineItemEl.classList.add('opacity-50', 'cursor-progress');
-
-          const currentCount = Alpine.raw(Alpine.store('cart_count').count);
-
           this.locked = lineItemEl;
 
           fetch(theme.routes.cart_change_url, config)
             .then((res) => res.json())
             .then((data) => {
-              if (data.item_count === currentCount) {
+              if (target == 'quantity' && data.item_count === currentCount) {
                 // Quantity change had no effect -- most likely, there is no more inventory
                 const errorEl = lineItemEl.querySelector(
                   '[data-cart-quantity-error]'
@@ -101,12 +116,14 @@ document.addEventListener('alpine:init', () => {
 
                 errorEl.classList.remove('hidden');
               } else {
-                document.body.dispatchEvent(
-                  new CustomEvent('shapes:modalcart:cartqtychange', {
-                    bubbles: true,
-                    detail: { response: data, originalTarget: lineItemEl },
-                  })
-                );
+                
+                  document.body.dispatchEvent(
+                    new CustomEvent('shapes:modalcart:cartqtychange', {
+                      bubbles: true,
+                      detail: { response: data, originalTarget: lineItemEl },
+                    })
+                  );
+                
               }
             })
             .catch(() => {

@@ -1,7 +1,9 @@
 window['ThemeComponent_Quantity'] = () => {
   return {
     quantity: 1,
-
+    init(){
+      this.$watch('prQuantity', (value)=>{this.quantity = value});  
+    },
     dispatchInputChange() {
       this.$refs.quantityInput.dispatchEvent(new Event('change', {
         bubbles: true
